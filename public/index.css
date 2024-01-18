@@ -53,6 +53,7 @@ ul{
     align-items: center;
 }
 
+
 ul li{
 list-style: none;
 margin-left: 62px;
@@ -247,11 +248,10 @@ ul li a:hover{
 }
 
 footer {
+    position: sticky;
     background-color: #1f2937;
     color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 2em 0;
 }
 

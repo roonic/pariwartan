@@ -4,14 +4,11 @@ const { TeacherAttendance } = require('../models'); // Adjust the path according
 
 const getAllTeacherAttendances = async (req, res) => {
   try {
-    const { teacherName, date } = req.query;
+    const { teacherId, } = req.query;
 
     const queryObject = {};
-    if (teacherName) {
-      queryObject.teacher_name = { [Op.like]: teacherName + '%' };
-    }
-    if (date) {
-      queryObject.date = date;
+    if (teacherId) {
+      queryObject.teacher_id = teacherId 
     }
 
     const page = Number(req.query.page) || 1;
@@ -33,26 +30,28 @@ const getAllTeacherAttendances = async (req, res) => {
 
 const updateTeacherAttendance = async (req, res) => {
   try {
-    const { teacherName, date, isPresent } = req.body;
+    const { teacherId, today_attendance} = req.body;
 
-    if (!teacherName || !date || typeof isPresent !== 'boolean') {
+    if (!teacherId || !today_attendance) {
       throw new Error('Invalid input parameters');
     }
 
     const attendanceRecord = await TeacherAttendance.findOne({
-      where: { teacher_name: teacherName, date },
+      where: { teacher_id: teacherId},
     });
-
+    console.log(attendanceRecord.total)
     if (!attendanceRecord) {
       // If the record doesn't exist, create a new one
       await TeacherAttendance.create({
-        teacher_name: teacherName,
-        date,
-        is_present: isPresent,
+        teacher_id: teacherId,
+        total,
+        present,
       });
     } else {
       // If the record exists, update the is_present field
-      await attendanceRecord.update({ is_present: isPresent });
+      attendanceRecord.total += 1
+      attendanceRecord.present += Number(today_attendance)
+      await attendanceRecord.update({ present: attendanceRecord.present, total: attendanceRecord.total});
     }
 
     res.status(StatusCodes.OK).json({ message: 'Teacher attendance updated successfully' });

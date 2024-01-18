@@ -23,13 +23,13 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    date: {
-      type: DataTypes.DATEONLY,
+    total: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    is_present: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false,
+    present: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
     },
   }, {
     sequelize,

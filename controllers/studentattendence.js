@@ -4,14 +4,11 @@ const {StudentAttendance} = require('../models')
 
 const getAllStudentAttendances = async (req, res) => {
   try {
-    const { studentName, date } = req.query;
+    const { studentId } = req.query;
 
     const queryObject = {};
-    if (studentName) {
-      queryObject.teacher_name = { [Op.like]: teacherName + '%' };
-    }
-    if (date) {
-      queryObject.date = date;
+    if (studentId) {
+      queryObject.student_id = studentId 
     }
 
     const page = Number(req.query.page) || 1;
@@ -33,24 +30,26 @@ const getAllStudentAttendances = async (req, res) => {
 
 const updateStudentAttendance = async (req, res) => {
   try {
-    const { studentId, date, isPresent } = req.body;
+    const { studentId, today_attendance} = req.body;
 
-    if (!studentId || !date || typeof isPresent !== 'boolean') {
+    if (!studentId || !today_attendance) {
       return res.status(StatusCodes.BAD_REQUEST).json({ error: 'Invalid input parameters' });
     }
 
     let attendanceRecord = await StudentAttendance.findOne({
-      where: { student_id: studentId, date },
+      where: { student_id: studentId},
     });
 
     if (!attendanceRecord) {
       attendanceRecord = await StudentAttendance.create({
         student_id: studentId,
-        date,
-        is_present: isPresent,
+        total: today_attendance,
+        present: today_attendance,
       });
     } else {
-      await attendanceRecord.update({ is_present: isPresent });
+      total += 1
+      present += Number(today_attendance)
+      await attendanceRecord.update({ present, total });
     }
 
     return res.status(StatusCodes.OK).json({ message: 'Student attendance updated successfully' });

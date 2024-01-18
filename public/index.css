@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 115vh;
+}
+
+.nav{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+img{
+    max-width:100px;
+    float:left;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height:70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+list-style: none;
+margin-left: 62px;
+margin-top: 27px;
+font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.6s ease-in-out;
+}
+
+ul li a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+.search1{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+
+.search2{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width:200px;
+    background: transparent;
+    border: 1 px solid brown;
+    margin-top: 13px;
+    color:azure;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.search3{
+    width: 100px;
+    height: 40px;
+    background: brown;
+    border: 2px solid brown;
+    margin-top: 14px;
+    color: whitesmoke;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search3:focus{
+    outline: none;
+}
+
+.search2:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height:auto;
+    margin: auto;
+    color: black;
+    position:relative;
+}
+
+.content h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .connect{
+    width:160px;
+    height:40px;
+    background: brown;
+    border: none;
+    margin-bottom:10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.content .connect a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.connect:hover{
+    background-color: royalblue;
+}
+
+.content span{
+    color: brown;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position:absolute;
+    top:-20px;
+    left: 870px;
+    border-radius: 10px;
+    padding:25px;
+}
+
+.form h2{
+    width:220px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:brown;
+    font-size: 22px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width:240px;
+    height:35px;
+    background: transparent;
+    border-bottom: 1px solid brown;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: aliceblue;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+::placeholder{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formbtn{
+    width: 240px;
+    height: 40px;
+    background: brown;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: azure;
+    transition: 0.06s ease;
+}
+
+.formbtn:hover{
+    background: antiquewhite;
+    color: brown;
+    transition: 0.4s;
+}
+
+.formbtn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: brown;
+}
+
+.form .link a:hover{
+    color:azure;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+

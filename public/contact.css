@@ -1,0 +1,204 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    width: 100%;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(5.png);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.nav{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+img{
+    max-width:100px;
+    float:left;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height:70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+list-style: none;
+margin-left: 62px;
+margin-top: 27px;
+font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.6s ease-in-out;
+}
+
+ul li a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+.search1{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+
+.search2{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width:200px;
+    background: transparent;
+    border: 1 px solid brown;
+    margin-top: 13px;
+    color:azure;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.search3{
+    width: 100px;
+    height: 40px;
+    background: brown;
+    border: 2px solid brown;
+    margin-top: 14px;
+    color: whitesmoke;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search3:focus{
+    outline: none;
+}
+
+.search2:focus{
+    outline: none;
+}
+
+
+.contact{
+    min-height: 100vh;
+    padding:50px;
+    text-align: center;
+}
+
+.container1{
+    max-width: 800px;
+    margin:auto;
+}
+
+.container1 h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:brown
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+}
+
+.contact-form{
+    text-align: left;
+}
+
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: brown
+}
+
+.form1{
+    margin-bottom: 20px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    background-color: azure;
+}
+
+input:focus,textarea:focus{
+    outline:none;
+    box-shadow: 0 0 8px brown;
+}
+
+button{
+    display:inline-block;
+    padding: 12px 24px;
+    background-color: brown;
+    color: black;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:green;
+}
+
+.contactinfo{
+    text-align: left;
+    margin-left: 180px;
+
+}
+
+.contactinfo h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.contactinfo p{
+    margin-bottom: 10px;
+    color: red;
+}
+
+.contactinfo i{
+    color:brown;
+    margin-right: 10px;
+}

@@ -1,0 +1,182 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    width: 100%;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+}
+
+.nav{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+img{
+    max-width:100px;
+    float:left;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height:70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+list-style: none;
+margin-left: 62px;
+margin-top: 27px;
+font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.6s ease-in-out;
+}
+
+ul li a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+.search1{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+
+.search2{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width:200px;
+    background: transparent;
+    border: 1 px solid brown;
+    margin-top: 13px;
+    color:azure;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.search3{
+    width: 100px;
+    height: 40px;
+    background: brown;
+    border: 2px solid brown;
+    margin-top: 14px;
+    color: whitesmoke;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search3:focus{
+    outline: none;
+}
+
+.search2:focus{
+    outline: none;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    margin-right: 15px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}

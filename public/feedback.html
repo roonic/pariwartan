@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwartan</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="icon">
+                <h2 class="logo"><img src="logo.jpg" alt="logo"></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="blog.html">BLOG/EVENTS</a></li>
+                    <li><a href="feedback.html">FEEDBACKS</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+
+            <div class="search1">
+                <input class="search2" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="search3">SEARCH</button></a>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <header>
+            <h1>Government Schools Feedback</h1>
+        </header>
+    
+        <div class="container">
+    
+            <form id="feedbackForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="6" required></textarea>
+    
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="cleanliness"> Cleanliness</label>
+                    <label><input type="checkbox" name="safety"> Safety</label>
+                    <label><input type="checkbox" name="facilities"> Facilities</label>
+                </div>
+    
+                <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
